@@ -2,7 +2,6 @@ class PopoverController < UIViewController
   def viewDidLoad
     super
     self.view.backgroundColor = UIColor.whiteColor
-    self.title = "Popover"
 
     @choices = ['Choice 1', 'Choice 2', 'Choice 3']
 
@@ -15,7 +14,7 @@ class PopoverController < UIViewController
   end
 
   def show_popover
-    PopoverView.showPopoverAtPoint([50,50], inView: self.view, withStringArray: ['Choice 1', 'Choice 2', 'Choice 3'], delegate: self)
+    PopoverView.showPopoverAtPoint([50,50], inView: self.view, withStringArray: @choices, delegate: self)
   end
 
   def popoverView(popoverView, didSelectItemAtIndex: index)
