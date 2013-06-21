@@ -1,0 +1,10 @@
+PODS:
+  - PopoverView (0.0.1)
+
+DEPENDENCIES:
+  - PopoverView
+
+SPEC CHECKSUMS:
+  PopoverView: 571c17ebd5f0c20570e1f12ca1800bd56e1b6dc3
+
+COCOAPODS: 0.20.2
