@@ -1,4 +1,5 @@
-= RubyMotion Popovers on the iPhone
+RubyMotion Popovers on the iPhone
+=================================
 
 [Popovers](http://developer.apple.com/library/ios/#documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/Popovers.html)
 are a useful way to present a list of options or actions in a non-modal setting. Apple provides a
