@@ -25,7 +25,6 @@ class PopoverButtonView < UIButton
   # Public: Sets the array of popover values
   def popover_values=(values)
     @popover_values = values
-    setTitle(@popover_values[0], forState: UIControlStateNormal)
   end
 
   # Public: Gets the array of popover values
@@ -53,7 +52,7 @@ class PopoverButtonView < UIButton
   # a value, by index. Convert that to a string value and call our view's delegate
   def popoverView(popoverView, didSelectItemAtIndex: index)
     new_value = @popover_values[index]
-    setTitle(new_value, forState: UIControlStateNormal)
+    #setTitle(new_value, forState: UIControlStateNormal)
     @delegate.popoverButtonView(self, valueDidChange: new_value)
     popoverView.dismiss
   end
